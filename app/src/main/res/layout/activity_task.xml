@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".Task">
+
+    <TextView
+        android:id="@+id/taskTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textviewstyle"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskEd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskEd"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/textviewstyle"
+        android:gravity="top"
+        android:hint="@string/write"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/taskbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/taskbutton"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_btn"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Submit"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
